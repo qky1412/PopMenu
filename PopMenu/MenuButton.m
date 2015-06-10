@@ -55,12 +55,14 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     // 播放缩放动画
+    /*
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animation];
     scaleAnimation.springBounciness = 20;    // value between 0-20
     scaleAnimation.springSpeed = 20;     // value between 0-20
     scaleAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.3, 1.3)];
     [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimationKey"];
+     */
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
