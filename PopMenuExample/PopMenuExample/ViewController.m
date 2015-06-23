@@ -52,6 +52,7 @@
     if (!_popMenu) {
         _popMenu = [[PopMenu alloc] initWithFrame:self.view.bounds items:items];
         _popMenu.menuAnimationType = kPopMenuAnimationTypeNetEase;
+        _popMenu.perRowItemCount = 1;
     }
     if (_popMenu.isShowed) {
         return;

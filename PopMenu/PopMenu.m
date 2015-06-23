@@ -12,8 +12,8 @@
 #import <POP.h>
 
 #define MenuButtonHeight 110
-#define MenuButtonVerticalPadding 10
-#define MenuButtonHorizontalMargin 10
+#define MenuButtonVerticalPadding 20
+#define MenuButtonHorizontalMargin 20
 #define MenuButtonAnimationTime 0.2
 #define MenuButtonAnimationInterval (MenuButtonAnimationTime / 5)
 
