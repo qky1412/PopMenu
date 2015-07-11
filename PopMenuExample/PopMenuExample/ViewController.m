@@ -41,13 +41,13 @@
     [items addObject:menuItem];
     
     menuItem = [MenuItem itemWithTitle:@"Twitter" iconName:@"post_type_bubble_twitter" glowColor:[UIColor colorWithRed:0.000 green:0.509 blue:0.687 alpha:0.800]];
-    [items addObject:menuItem];
+    //[items addObject:menuItem];
     
     menuItem = [MenuItem itemWithTitle:@"Youtube" iconName:@"post_type_bubble_youtube" glowColor:[UIColor colorWithRed:0.687 green:0.164 blue:0.246 alpha:0.800]];
-    [items addObject:menuItem];
+    //[items addObject:menuItem];
     
     menuItem = [MenuItem itemWithTitle:@"Facebook" iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.258 green:0.245 blue:0.687 alpha:0.800]];
-    [items addObject:menuItem];
+    //[items addObject:menuItem];
     
     if (!_popMenu) {
         _popMenu = [[PopMenu alloc] initWithFrame:self.view.bounds items:items];

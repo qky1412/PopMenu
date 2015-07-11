@@ -12,8 +12,8 @@
 #import <POP.h>
 
 #define MenuButtonHeight 110
-#define MenuButtonVerticalPadding 20
-#define MenuButtonHorizontalMargin 20
+#define MenuButtonVerticalPadding 30
+#define MenuButtonHorizontalMargin 30
 #define MenuButtonAnimationTime 0.2
 #define MenuButtonAnimationInterval (MenuButtonAnimationTime / 5)
 
@@ -122,7 +122,8 @@
     
     NSInteger perRowItemCount = self.perRowItemCount;
     
-    CGFloat menuButtonWidth = (CGRectGetWidth(self.bounds) - ((perRowItemCount + 1) * MenuButtonHorizontalMargin)) / perRowItemCount;
+    //CGFloat menuButtonWidth = (CGRectGetWidth(self.bounds) - ((perRowItemCount + 1) * MenuButtonHorizontalMargin)) / perRowItemCount;
+    CGFloat menuButtonWidth = 100;
     
     typeof(self) __weak weakSelf = self;
     for (int index = 0; index < items.count; index ++) {
@@ -235,7 +236,8 @@
     NSUInteger rowCount = itemCount / perRowItemCount + (itemCount % perColumItemCount > 0 ? 1 : 0);
     CGFloat insetY = (CGRectGetHeight(self.bounds) - (itemHeight + paddingY) * rowCount) / 2.0;
     
-    CGFloat originX = (index % perRowItemCount) * (itemWidth + paddingX) + paddingX + (page * CGRectGetWidth(self.bounds));
+    //CGFloat originX = (index % perRowItemCount) * (itemWidth + paddingX) + paddingX + (page * CGRectGetWidth(self.bounds));
+    CGFloat originX = CGRectGetWidth(self.bounds)/2 - 50;
     CGFloat originY = ((index / perRowItemCount) - perColumItemCount * page) * (itemHeight + paddingY) + paddingY;
     
     CGRect itemFrame = CGRectMake(originX, originY + insetY, itemWidth, itemHeight);
